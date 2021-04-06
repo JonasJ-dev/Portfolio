@@ -6,6 +6,7 @@ body {
     margin: 0;
     width: 100vw;
     text-align: center;
+    overflow-x: hidden;
 }
 
 ul {
@@ -164,4 +165,27 @@ header p {
         justify-content: left;
         text-align: left;
     }
+}
+
+/* ANIMATIONS */
+
+
+.fade-in-custom {
+    opacity: 0;
+    animation: fadeIn ease-in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.delay1 {
+    animation-delay: 0.5s;
+}
+
+.delay2 {
+    animation-delay: 1.5s;
+}
+
+@keyframes fadeIn{
+    from { opacity: 0; }
+    to { opacity: 1; }
 }

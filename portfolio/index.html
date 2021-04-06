@@ -6,23 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <title>JJwebDev</title>
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav data-aos="fade-right" data-aos-duration="1500">
             <ul>
                 <li>JJwebDev</li>
                 <li>Home</li>
                 <li>About</li>
                 <li>Projects</li>
                 <li>Contacts</li>
+                <li><a href="CatPictures.html">Cat pictures</a></li>
             </ul>
         </nav>
-        <h1> ~ Hi, I'm Jonas ~ </h1>
-        <p>I'm a web developer and cat lover <i class="fas fa-cat"></i></p>
+        <h1 class="fade-in-custom delay1"> ~ Hi, I'm Jonas ~ </h1>
+        <p class="fade-in-custom delay2">I'm a web developer and cat lover <i class="fas fa-cat"></i></p>
         <hr>
     </header>
 
@@ -59,7 +61,7 @@
                 <a href="">Visit site(currently unavailable)</a>
             </div>
             <div class="recent-work-image">
-                <img src="images/kompra.PNG">
+                <img src="images/kompranr2.PNG">
             </div>
         </div>
     </section>
@@ -72,6 +74,12 @@
             <p class="contact-text">LinkedIn</p>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 
 </html>
