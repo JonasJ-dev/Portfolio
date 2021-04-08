@@ -1,12 +1,18 @@
 /* GLOBAL STYLES */
 
+html {
+    background: #eee;
+}
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 10px;
-    margin: 0;
+    margin: 0 auto;
     width: 100vw;
     text-align: center;
     overflow-x: hidden;
+    max-width: 1500px;
+    background: #eee;
 }
 
 ul {
@@ -40,14 +46,47 @@ header {
     height: 100vh;
 }
 
-nav ul {
-    font-size: 1.2rem;
+nav {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
 }
 
-nav li {
+.nav-ul {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    justify-content: center;
+    list-style-type: none;
+}
+
+
+/* .nav-ul {
     margin: 0 1rem;
+} */
+
+.nav-ul li a {
+    display: inline-block;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.hamburger {
+    background-color: transparent;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    display: none;
+}
+
+.hamburger:focus {
+    outline: none;
 }
 
 header h1 {
@@ -131,7 +170,7 @@ header p {
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 860px) {
-    nav ul {
+    .nav-ul {
         justify-content: flex-start;
     }
     header {
@@ -167,8 +206,22 @@ header p {
     }
 }
 
-/* ANIMATIONS */
+@media screen and (max-width: 860px) {
+    .nav-ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav-ul.show {
+        display: flex;
+    }
+    .hamburger {
+        display: block;
+    }
+}
 
+
+/* ANIMATIONS */
 
 .fade-in-custom {
     opacity: 0;
@@ -185,7 +238,11 @@ header p {
     animation-delay: 1.5s;
 }
 
-@keyframes fadeIn{
-    from { opacity: 0; }
-    to { opacity: 1; }
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

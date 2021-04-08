@@ -1,12 +1,18 @@
 /* GLOBAL STYLES */
 
+html {
+    background: #eee;
+}
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 10px;
-    margin: 0;
+    margin: 0 auto;
     width: 100vw;
     text-align: center;
     overflow-x: hidden;
+    max-width: 1500px;
+    background: #eee;
 }
 
 ul {
@@ -59,6 +65,7 @@ header p {
     padding: 1rem 0;
 }
 
+
 /* CONTACT SECTION */
 
 #contact {
@@ -80,6 +87,7 @@ header p {
     margin-bottom: 3rem;
 }
 
+
 /* PICTURES */
 
 .album-title {
@@ -95,12 +103,35 @@ header p {
     margin-bottom: 1rem;
     padding: 1rem;
     background: lightslategray;
+    position: relative;
 }
 
 .grid-item img {
     width: 100%;
     height: 100%;
 }
+
+.hidden-text {
+    display: none;
+}
+
+.grid-item:hover>.hidden-text {
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.grid-item:hover img {
+    filter: brightness(0.4);
+    transform: scale(1.03);
+    opacity: 0.9;
+}
+
 
 /* MEDIA QUERIES */
 
@@ -139,13 +170,11 @@ header p {
         justify-content: left;
         text-align: left;
     }
-
     .pictures {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
     }
-
     .grid-item {
         flex-basis: 45%;
     }

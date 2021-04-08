@@ -14,12 +14,15 @@
 <body>
     <header>
         <nav data-aos="fade-right" data-aos-duration="1500">
-            <ul>
-                <li>JJwebDev</li>
-                <li>Home</li>
-                <li>About</li>
-                <li>Projects</li>
-                <li>Contacts</li>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-ul" id="nav-ul">
+                <li><a>JJwebDev</a></li>
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Projects</a></li>
+                <li><a>Contacts</a></li>
                 <li><a href="CatPictures.html">Cat pictures</a></li>
             </ul>
         </nav>
@@ -75,6 +78,7 @@
         </div>
     </footer>
 
+    <script src="index.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
