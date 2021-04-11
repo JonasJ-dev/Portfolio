@@ -1,5 +1,9 @@
 # Portfolio
 
+PUT ON HOLD!
+
+The development of this site has been put on hold for private reasons, I might come back to it in a few weeks
+
 THIS IS STILL A VERY EARLY SITE MANY THINGS WILL CHANGE!!
 
 This is my portfolio website that I'm currently working on. I uploaded it here for ease of access. Right now I'm going to use HTML and CSS primarily, but later down the line I'm going
